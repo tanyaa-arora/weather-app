@@ -1,0 +1,71 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+#outerBox {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  background-color: rgb(241, 205, 165);
+  border: solid;
+  position: relative;
+}
+body {
+  margin: 0px;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#weekBox {
+  height: 33%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+.daysBox {
+  width: 12%;
+  border: solid 1px;
+  background-color: rgb(153, 115, 216);
+}
+#today {
+  width: 30%;
+}
+#additionalInfo {
+  height: 30%;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+#dateTime {
+  width: 30%;
+  height: 100%;
+  background-color: darksalmon;
+  display: flex;
+  flex-direction: column;
+}
+#time {
+  height: 30%;
+  width: 100%;
+  background-color: hotpink;
+}
+#date {
+  height: 70%;
+  width: 100%;
+  background-color: aliceblue;
+}
+#place {
+  height: 100%;
+  width: 30%;
+  background-color: blanchedalmond;
+}
