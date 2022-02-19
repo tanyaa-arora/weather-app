@@ -8,12 +8,13 @@ body,
   height: 100%;
 }
 #outerBox {
-  height: 80%;
-  width: 80%;
+  height: 85%;
+  width: 85%;
   display: flex;
-  background-color: rgb(238, 236, 104);
-  border: solid;
   position: relative;
+  background-size: cover;
+  box-shadow: 2px 2px 6px;
+  background-image: url("https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i86150a51964976d0/version/1577359562/azores-most-beautiful-landscape-in-europe.jpg");
 }
 body {
   margin: 0px;
@@ -22,6 +23,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("https://i.pinimg.com/originals/44/ec/2f/44ec2f71286ebf0f577a904e5f44f5f7.jpg");
+  opacity: 1;
+  background-size: cover;
 }
 #weekBox {
   height: 33%;
@@ -29,20 +33,19 @@ body {
   position: absolute;
   bottom: 0;
   display: flex;
+  background-color: mediumblue;
+  opacity: 0.5;
 }
 .daysBox {
   width: 12%;
-  border: solid 1px;
-  background-color: rgb(153, 115, 216);
 }
 #today {
   width: 30%;
 }
 #additionalInfo {
-  height: 30%;
+  height: 25%;
   width: 100%;
   margin-top: 2rem;
-  background-color: cornflowerblue;
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
@@ -50,22 +53,18 @@ body {
 #dateTime {
   width: 30%;
   height: 100%;
-  background-color: darksalmon;
   display: flex;
   flex-direction: column;
 }
 #time {
-  height: 30%;
-  width: 100%;
-  background-color: hotpink;
-}
-#date {
   height: 70%;
   width: 100%;
-  background-color: aliceblue;
+}
+#date {
+  height: 30%;
+  width: 100%;
 }
 #place {
   height: 100%;
   width: 30%;
-  background-color: blanchedalmond;
 }
