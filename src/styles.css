@@ -1,7 +1,3 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
 html,
 body,
 #root {
@@ -11,13 +7,16 @@ body,
   height: 85%;
   width: 85%;
   display: flex;
-  position: relative;
+  flex-direction: column;
+  /* justify-content: space-between; */
   background-size: cover;
-  box-shadow: 2px 2px 6px;
-  background-image: url("https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i86150a51964976d0/version/1577359562/azores-most-beautiful-landscape-in-europe.jpg");
+  box-shadow: 4px 5px 10px 4px rgb(45, 45, 45);
+  background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=luke-chesser-pJadQetzTkI-unsplash.jpg");
 }
 body {
   margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 #root {
   display: flex;
@@ -30,41 +29,135 @@ body {
 #weekBox {
   height: 33%;
   width: 100%;
-  position: absolute;
   bottom: 0;
+  flex: 4;
+  background-color: rgba(25, 25, 77, 0.787);
   display: flex;
-  background-color: mediumblue;
-  opacity: 0.5;
 }
 .daysBox {
-  width: 12%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #today {
-  width: 30%;
+  flex: 2.5;
+  display: flex;
+  padding: 0;
+  justify-content: center;
 }
 #additionalInfo {
-  height: 25%;
-  width: 100%;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 50px;
+  padding-bottom: 10px;
+  flex: 2.5;
 }
 #dateTime {
-  width: 30%;
+  width: 33%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 #time {
-  height: 70%;
+  height: 60%;
   width: 100%;
 }
 #date {
-  height: 30%;
+  height: 40%;
   width: 100%;
 }
 #place {
   height: 100%;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+#todo {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+.item {
+  margin: 0px;
+  margin-top: 3px;
+}
+p {
+  margin: 0px;
+}
+.todoList {
+  height: 20px;
+  width: min-content;
+  background-color: rgba(28, 28, 125, 0.794);
+  border-radius: 15px;
+  text-align: center;
+  padding: 3px;
+}
+.element {
+  display: flex;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+#time1 {
+  color: white;
+  font-size: 60px;
+}
+span {
+  color: white;
+}
+#date1 {
+  font-size: 20px;
+  color: white;
+}
+p {
+  color: white;
+}
+#place1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+#icon1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#weekday1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#img1 {
+  height: 100px;
+}
+#temp1 {
+  font-size: 60px;
+  font-weight: 300;
+}
+.icon {
+  flex: 1;
+}
+.weekday {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.temp {
+  flex: 1;
+}
+.img {
+  height: 70px;
+}
+.degree {
+  font-size: 30px;
+}
+.task-gap {
+  margin: 0;
+  margin-right: 20px;
+  width: 50px;
 }
